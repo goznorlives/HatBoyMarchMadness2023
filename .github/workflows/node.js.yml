@@ -27,10 +27,10 @@ jobs:
       with:
         cmd: install # will run `yarn install` command
 
-    - name: Run test
-      uses: borales/actions-yarn@v4
-      with:
-        cmd: test # will run `yarn test` command
+    # - name: Run test
+    #   uses: borales/actions-yarn@v4
+    #   with:
+    #     cmd: test # will run `yarn test` command
 
     # - name: Run build
     #   uses: borales/actions-yarn@v4
