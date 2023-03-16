@@ -23,16 +23,6 @@ module.exports = {
           filename: 'images/[name][ext]'
         }
       },
-      // {
-      //   test: /\.tsj$/,
-      //   type: "asset/resource",
-      //   include: [
-      //     path.resolve(__dirname, 'tilesets'),
-      //   ],
-      //   generator: {
-      //     filename: '[name][ext]'
-      //   }
-      // },
       {
         test: [/\.tm(x|j)$/, /\.ts(x|j)$/],
         type: "asset/resource",
