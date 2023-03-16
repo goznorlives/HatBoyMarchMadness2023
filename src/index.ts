@@ -29,7 +29,6 @@ class Game extends Engine {
 
     return super.start(loader).then(() => {
       // Create new scene with a player
-      // this.levelOne = new LevelOne();
       this.player = new Player();
 
       // Create the main Keldata scene
