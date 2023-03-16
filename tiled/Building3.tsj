@@ -1,0 +1,14 @@
+{ "columns":4,
+ "image":"images\/Building3.png",
+ "imageheight":633,
+ "imagewidth":996,
+ "margin":0,
+ "name":"Building3",
+ "spacing":0,
+ "tilecount":4,
+ "tiledversion":"1.10.0",
+ "tileheight":632,
+ "tilewidth":249,
+ "type":"tileset",
+ "version":"1.10"
+}

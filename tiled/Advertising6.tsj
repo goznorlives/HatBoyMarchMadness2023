@@ -1,0 +1,14 @@
+{ "columns":4,
+ "image":"images\/Advertising6.png",
+ "imageheight":111,
+ "imagewidth":276,
+ "margin":0,
+ "name":"Advertising6",
+ "spacing":0,
+ "tilecount":4,
+ "tiledversion":"1.10.0",
+ "tileheight":111,
+ "tilewidth":69,
+ "type":"tileset",
+ "version":"1.10"
+}

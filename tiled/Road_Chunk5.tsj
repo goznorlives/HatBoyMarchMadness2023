@@ -1,0 +1,14 @@
+{ "columns":4,
+ "image":"images\/Road_Chunk5.png",
+ "imageheight":93,
+ "imagewidth":676,
+ "margin":0,
+ "name":"Road_Chunk5",
+ "spacing":0,
+ "tilecount":4,
+ "tiledversion":"1.10.0",
+ "tileheight":93,
+ "tilewidth":169,
+ "type":"tileset",
+ "version":"1.10"
+}

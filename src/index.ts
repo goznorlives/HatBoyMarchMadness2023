@@ -1,36 +1,50 @@
-import { Engine, Loader, DisplayMode } from 'excalibur';
-import { LevelOne } from './scenes/level-one/level-one';
+import { DevTool } from '@excaliburjs/dev-tools';
+import {
+  Engine,
+  Loader,
+  DisplayMode,
+  Logger,
+} from 'excalibur';
 import { Player } from './actors/player/player';
 import { Resources } from './resources';
+import { KeldataScene } from './scenes/keldata/keldata';
 
 /**
  * Managed game class
  */
 class Game extends Engine {
   private player: Player;
-  private levelOne: LevelOne;
+  private keldataScene: KeldataScene;
 
   constructor() {
     super({ displayMode: DisplayMode.FitScreen });
   }
 
-  public start() {
-
-    // Create new scene with a player
-    this.levelOne = new LevelOne();
-    this.player = new Player();
-    this.levelOne.add(this.player);
-
-    game.add('levelOne', this.levelOne);
+  public async start() {
 
     // Automatically load all default resources
     const loader = new Loader(Object.values(Resources));
 
-    return super.start(loader);
+    Logger.getInstance().info('Loading resources...');
+
+    return super.start(loader).then(() => {
+      // Create new scene with a player
+      this.player = new Player();
+
+      // Create the main Keldata scene
+      this.keldataScene = new KeldataScene();
+
+      // Add the player to the scene
+      this.keldataScene.add(this.player);
+
+      this.add('keldata', this.keldataScene);
+
+    });
   }
 }
 
 const game = new Game();
+const devtool = new DevTool(game);
 game.start().then(() => {
-  game.goToScene('levelOne');
+  game.goToScene('keldata');
 });
