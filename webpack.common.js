@@ -14,6 +14,36 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(png)$/i,
+        type: "asset/resource",
+        include: [
+          path.resolve(__dirname, 'tiled/images'),
+        ],
+        generator: {
+          filename: 'images/[name][ext]'
+        }
+      },
+      // {
+      //   test: /\.tsj$/,
+      //   type: "asset/resource",
+      //   include: [
+      //     path.resolve(__dirname, 'tilesets'),
+      //   ],
+      //   generator: {
+      //     filename: '[name][ext]'
+      //   }
+      // },
+      {
+        test: [/\.tm(x|j)$/, /\.ts(x|j)$/],
+        type: "asset/resource",
+        include: [
+          path.resolve(__dirname, 'tiled'),
+        ],
+        generator: {
+          filename: '[name][ext]'
+        }
+      },
+      {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },

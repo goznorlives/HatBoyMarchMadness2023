@@ -1,0 +1,15 @@
+{ "columns":3,
+ "image":"images\/Floor_Metal_01-128x64.png",
+ "imageheight":384,
+ "imagewidth":384,
+ "margin":0,
+ "name":"Floor_Metal_01-128x64",
+ "spacing":0,
+ "tilecount":18,
+ "tiledversion":"1.10.0",
+ "tileheight":64,
+ "tilewidth":128,
+ "transparentcolor":"#ff00ff",
+ "type":"tileset",
+ "version":"1.10"
+}
