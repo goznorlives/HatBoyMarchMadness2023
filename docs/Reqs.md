@@ -1,15 +1,12 @@
 # Requirements
 ## _Requirements/Design Document for WIP Game for HatBoy March Madness 2023_
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 This document will explain some of the design ideas for mechanics in the game with their
 requirements and restrictions.
 
 ## Game Summary
 
-_A 2.5D isometric pixel/voxel art style cyberpunk-esc game._
-_Similar to Shadowrun._
+_A 2.5D isometric pixel/voxel art style cyberpunk-esque game._
 
 ## Tech Stack
 
@@ -121,10 +118,3 @@ _Missions_
    
    [tiled]: <https://www.mapeditor.org/>
    [magica]: <https://ephtracy.github.io/>
-
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
