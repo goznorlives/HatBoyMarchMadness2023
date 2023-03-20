@@ -1,0 +1,3 @@
+[submodule "tiled-pvt"]
+	path = tiled-pvt
+	url = git@github.com:SgtFlame/HatBoyMarchMadnessArt2023.git

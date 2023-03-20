@@ -18,6 +18,7 @@ module.exports = {
         type: "asset/resource",
         include: [
           path.resolve(__dirname, 'tiled/images'),
+          path.resolve(__dirname, 'tiled-pvt/images'),
         ],
         generator: {
           filename: 'images/[name][ext]'
@@ -28,6 +29,7 @@ module.exports = {
         type: "asset/resource",
         include: [
           path.resolve(__dirname, 'tiled'),
+          path.resolve(__dirname, 'tiled-pvt/images'),
         ],
         generator: {
           filename: '[name][ext]'
